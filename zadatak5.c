@@ -2,7 +2,7 @@
 #include<stdbool.h>
 
 
-void main()
+int main()
 {
     int a, b;
 
@@ -17,6 +17,8 @@ void main()
     printf("%d * %d = %f\n", a, b, (float)a*b);
     printf("%d / %d = %f\n", a, b, (float)a/b);
     printf("%d %% %d = %d", a, b, a%b);
+
+    return 0;
 
 }
 
