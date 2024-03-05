@@ -5,4 +5,5 @@ Lectures that are presented so far:
 <li>Strukturno-programiranje---01</li>
 <li>Strukturno-programiranje---02</li>
 <li>Strukturno-programiranje---03</li>
+<li>Strukturno-programiranje---04</li>
 </ul>
