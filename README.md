@@ -7,4 +7,5 @@ Lectures that are presented so far:
 <li>Strukturno-programiranje---03</li>
 <li>Strukturno-programiranje---04</li>
 <li>Strukturno-programiranje---05</li>
+<li>Strukturno-programiranje---06</li>  
 </ul>
