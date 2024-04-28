@@ -8,14 +8,13 @@ int main()
     printf("Unesite broj ");
     scanf("%d" , &a);
 
-    b = floor(a/100);
-    c = a%100;
-    d = floor(c/10);
-    p = c%10;
+    b = a/100;
+    c = (a - (b*100)) / 10;
+    d = a % 10;
 
     printf("%d x 100\n", b);
-    printf("%d x 10\n", d);
-    printf("%d x 1", p);
+    printf("%d x 10\n", c);
+    printf("%d x 1", d);
 
     return 0;
     

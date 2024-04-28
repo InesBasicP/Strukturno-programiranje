@@ -1,9 +1,8 @@
 #include<stdio.h>
-#include<string.h>
 
 int main ()
 {
-    char c[2];
+    char c;
     int a, b;
 
     printf("Unesite +, -, * ili /: ");
@@ -15,24 +14,20 @@ int main ()
     printf("Unesite vrednost drugog operanda: ");
     scanf("%d" ,&b);
 
-    if(strcmp(c, "+") == 0)
+    switch (c)
     {
-        printf("%d + %d = %d" , a, b, a+b);
-    }
-
-    else if(strcmp(c, "-") == 0)
-    {
-        printf("%d - %d = %d" , a, b, a-b);
-    }
-
-    else if(strcmp(c, "*") == 0)
-    {
-        printf("%d * %d = %d" , a, b, a*b);
-    }
-
-    else if(strcmp(c, "/") == 0)
-    {
-        printf("%d / %d = %.2f" , a, b, (float)a/b);
+        case '+':
+            printf("%d+%d=%d", a, b, a+b);
+            break;
+        case '-':
+            printf("%d-%d=%d", a, b, a-b);
+            break;
+        case '*':
+            printf("%d*%d=%d", a, b, a*b);
+            break;
+        case '/':
+            printf("%d/%d=%.2f", a, b, (float)a/b);
+            break;
     }
 
     return 0;
