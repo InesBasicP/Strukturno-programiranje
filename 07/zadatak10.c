@@ -1,37 +1,39 @@
-#include<stdio.h>
-#include<stdbool.h>
+#include <stdio.h>
+#include <stdbool.h>
 
-int main()
+int main ()
 {
-    
-    int aiNiz[5] = {10,14,17,18,29};
-    bool Rastuci(int*, int);
 
-    if(Rastuci(aiNiz,5) == true)
+    int aiNiz[5] = {10,14,17,18,2};
+    bool bRazliciti (int *, int);
+
+    if(bRazliciti(aiNiz, 5) == true)
     {
-        printf("Elementi su rastuci.");
+        printf("Svi elementi su rastuci");
     }
     else
     {
-        printf("Elementi nisu rastuci.");
+        printf("Svi elementi nisu rastuci");
     }
 
     return 0;
 }
 
-bool Rastuci(int aiNiz[], int iBrojElemenata)
-{
-    int i;
-    bool bRaste = true;
-
-    for(i=0; i<=4; i++)
+    bool bRazliciti(int aiNiz[], int iBrojElemenata)
     {
-        if(aiNiz[i] > aiNiz[i + 1])
+        int iIndeks;
+        bool Rastuci;
+
+        for(iIndeks=0; iIndeks<=iBrojElemenata; iIndeks++)
         {
-            bRaste == false;
-            break;
+            if(aiNiz[iIndeks] < aiNiz[iIndeks + 1])
+            {
+                return (Rastuci == true);   
+            }
+
+            else
+            {
+                return (Rastuci == false);
+            }
         }
-        
     }
-    return (bRaste);
-}

@@ -33,14 +33,3 @@ char cIspis(int iUnos)
 }
 
 
-// void cIspis(int iUnos) ------> poziv: cIspis(iUnos)
-// {
-//     if (iUnos % 2 == 0)
-//     {
-//         printf("P");
-//     }
-//     else
-//     {
-//         printf("N");
-//     }
-// }
